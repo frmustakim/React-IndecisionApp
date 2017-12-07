@@ -5,7 +5,7 @@
     color: white;
     font-size: $l-size;
     font-weight: bold;
-    margin-bottom: $xl-size;
+    margin-bottom: $m-size;
     padding: 2.4rem;
     width: 100%;
 }
@@ -14,11 +14,18 @@
     opacity: .5;
 }
 
+@media (min-width: $desktop-breakpoint) {
+    .big-button {
+        margin-bottom: $xl-size;
+    }
+}
+
 .button {
     background: $purple;
     border: none;
     border-bottom: .3rem solid darken($color: $purple, $amount: 10);
     color: white;
+    min-width: 100px;
     font-weight: 500;
     padding: $s-size;    
 }
